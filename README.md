@@ -64,7 +64,7 @@ response = sr1(tcp_packet, timeout=1, verbose=False)
 
 3. **Clone Repository**:
    ```bash
-   git clone https://github.com/yourusername/network-scanner-tool.git
+   git clone https://github.com/RobCyberLab/Network-Scanner-Tool.git
    cd network-scanner-tool
    ```
 
