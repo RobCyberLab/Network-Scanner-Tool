@@ -118,7 +118,7 @@ python scanner.py TCP 127.0.0.1 0 1024 --range
 
 ### Test Tricks
 
-For Testing purposes we can start a simple HTTP server as follows:
+For Testing purposes we can start a simple HTTP server on different ports as follows:
 
 ```bash
 python -m http.server 80
