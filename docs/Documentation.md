@@ -37,11 +37,6 @@ cd network-scanner-tool
 pip install scapy tqdm colorama
 ```
 
-3. **Verify Installation**:
-```bash
-sudo python network_scanner.py --help
-```
-
 ### Required Libraries
 - `scapy`: Packet manipulation and network scanning
 - `tqdm`: Progress bar visualization
@@ -54,13 +49,13 @@ sudo python network_scanner.py --help
 
 #### Scan Specific Ports
 ```bash
-sudo python network_scanner.py TCP 192.168.1.1 22 80 443
+python network_scanner.py TCP 192.168.1.1 22 80 443
 ```
 - Scans ports 22, 80, and 443 on the target IP
 
 #### Scan Port Range
 ```bash
-sudo python network_scanner.py TCP 192.168.1.1 0 1000 --range
+python network_scanner.py TCP 192.168.1.1 0 1000 --range
 ```
 - Scans all ports from 0 to 1000 on the target IP
 
