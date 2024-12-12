@@ -100,7 +100,7 @@ python scanner.py TCP 127.0.0.1 22 80 443
 ```
 
 <p align="center">
-  <img src="ex1.png" alt="Scanning Common Ports" width="500">
+  <img src="ex1.png" alt="Scanning Common Ports" width="800">
   <br>
   <em>Scanning Common Ports</em>
 </p>
@@ -111,7 +111,7 @@ python scanner.py TCP 127.0.0.1 0 1024 --range
 ```
 
 <p align="center">
-  <img src="ex2.png" alt="Comprehensive Port Range Scan" width="500">
+  <img src="ex2.png" alt="Comprehensive Port Range Scan" width="800">
   <br>
   <em>Comprehensive Port Range Scan</em>
 </p>
