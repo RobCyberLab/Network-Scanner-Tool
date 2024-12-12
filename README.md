@@ -71,12 +71,12 @@ response = sr1(tcp_packet, timeout=1, verbose=False)
 ## Usage Examples🚀
 **Scan Specific Ports**:
 ```bash
-python network_scanner.py TCP 192.168.1.1 22 80 443
+python scanner.py TCP 192.168.1.1 22 80 443
 ```
 
 **Scan Port Range**:
 ```bash
-python network_scanner.py TCP 192.168.1.1 0 1000 --range
+python scanner.py TCP 192.168.1.1 0 1000 --range
 ```
 
 ## Possible Improvements🔬

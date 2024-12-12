@@ -49,13 +49,13 @@ pip install scapy tqdm colorama
 
 #### Scan Specific Ports
 ```bash
-python network_scanner.py TCP 192.168.1.1 22 80 443
+python scanner.py TCP 127.0.0.1 22 80 443
 ```
 - Scans ports 22, 80, and 443 on the target IP
 
 #### Scan Port Range
 ```bash
-python network_scanner.py TCP 192.168.1.1 0 1000 --range
+python scanner.py TCP 127.0.0.1 0 1000 --range
 ```
 - Scans all ports from 0 to 1000 on the target IP
 
@@ -96,32 +96,37 @@ def tcp_scan(target, ports, port_range=False):
 
 ### Example 1: Scanning Common Ports
 ```bash
-python network_scanner.py TCP 192.168.1.100 22 80 443
+python scanner.py TCP 127.0.0.1 22 80 443
 ```
-**Expected Output**:
-```
-Starting TCP scan on target: 192.168.1.100
-Scanning ports...: 100%|██████████| 3/3 [00:02<00:00]
 
-Open ports:
-22
-80
-```
+<p align="center">
+  <img src="ex1.png" alt="Scanning Common Ports" width="500">
+  <br>
+  <em>Scanning Common Ports</em>
+</p>
 
 ### Example 2: Comprehensive Port Range Scan
 ```bash
-python network_scanner.py TCP 10.0.0.1 0 1024 --range
+python scanner.py TCP 127.0.0.1 0 1024 --range
 ```
-**Expected Output**:
-```
-Starting TCP scan on target: 10.0.0.1
-Scanning ports...: 100%|██████████| 1025/1025 [00:45<00:00]
 
-Open ports:
-22
-80
-443
-3306
+<p align="center">
+  <img src="ex2.png" alt="Comprehensive Port Range Scan" width="500">
+  <br>
+  <em>Comprehensive Port Range Scan</em>
+</p>
+
+### Test Tricks
+
+For Testing purposes we can start a simple HTTP server as follows:
+
+```bash
+python -m http.server 80
+```
+
+Expected Output:
+```bash
+Serving HTTP on :: port 80 (http://[::]:80/) ...
 ```
 
 ## Security Considerations⚖️
