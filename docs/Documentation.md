@@ -28,7 +28,7 @@ The Network Scanner Tool is a lightweight, command-line network reconnaissance u
 ### Step-by-Step Installation
 1. **Clone the Repository**:
 ```bash
-git clone https://github.com/yourusername/network-scanner-tool.git
+git clone https://github.com/RobCyberLab/Network-Scanner-Tool.git
 cd network-scanner-tool
 ```
 
@@ -101,7 +101,7 @@ def tcp_scan(target, ports, port_range=False):
 
 ### Example 1: Scanning Common Ports
 ```bash
-sudo python network_scanner.py TCP 192.168.1.100 22 80 443
+python network_scanner.py TCP 192.168.1.100 22 80 443
 ```
 **Expected Output**:
 ```
@@ -115,7 +115,7 @@ Open ports:
 
 ### Example 2: Comprehensive Port Range Scan
 ```bash
-sudo python network_scanner.py TCP 10.0.0.1 0 1024 --range
+python network_scanner.py TCP 10.0.0.1 0 1024 --range
 ```
 **Expected Output**:
 ```
